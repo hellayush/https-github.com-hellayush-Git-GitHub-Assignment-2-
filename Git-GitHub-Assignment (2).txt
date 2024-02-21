@@ -1,0 +1,61 @@
+Q1 - How to check if git is available on your system ?
+
+ANS - * Open a Terminal or Command Prompt.
+      * Type git --version and press Enter.
+
+
+Q2 - How to initialize a new Git repository ?
+
+ANS - * Open a Terminal or Command Prompt.
+      *Navigate to the directory where you want to initialize the Git repository using the cd command. 
+      *After running this command, Git will initialize a new repository in the current directory, creating a hidden .git directory to store repository metadata.
+
+Q3 - How to tell git about your name and email? 
+
+ANS - * git config --global user.name "Your Name",
+      * git config --global user.email "your.email@example.com".
+
+Q4 -  How to add a file to the staging area ?
+
+ANS - *Open a Terminal or Command Prompt.
+      *Navigate to your Git repository's directory using the cd command if you're not already there.
+      *command to add a file to the staging area: git add <filename>.
+      *git add example.txt  --> This command stages the specified file for the next commit.
+
+Q5 -  How to remove a file from the staging area ? 
+
+ANS -   * Open a Terminal or Command Prompt.
+        * Navigate to your Git repository's directory using the cd command if you're not already there.
+       * command to remove a file from the staging area:git reset HEAD <filename>
+       
+
+Q6 - How to make a commit ? 
+
+ANS - Add Changes to the Staging Area: Use the git add command to stage the changes you want to include in the commit. For example, to stage all changes, you can use :
+git add .
+
+
+Q7 - How to send your changes to a remote repository ? 
+
+ANS - * Add your changes to the staging area using git add.
+      * Commit your changes using git commit.
+      * Push your changes to the remote repository using git push <remote-name> <branch-name>. 
+      *Replace <remote-name> with the name of the remote repository (usually origin) and <branch-name> with the branch you want to push to (e.g., main).
+
+Q8 - What is the difference between clone and pull ? 
+
+ANS -   Clone : 
+	* Purpose: Cloning is used to create a copy of an existing remote repository onto your local machine.
+        * Usage: It's typically used when you want to start working on a project that already exists remotely.
+       * Command: The command used to clone a repository is git clone <repository-url>, where <repository-url> is the URL of the remote repository you want to clone.
+  
+	Pull:
+
+     * Purpose: Pulling is used to fetch and integrate changes from a remote repository into your local repository.
+    * Usage: It's used when you want to update your local repository with the latest changes made in the remote repository since your last sync.
+   * Command: The command used to pull changes from the remote repository is git pull. This command fetches changes from the default remote repository and merges them into your current local branch.
+
+
+
+
+
